@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antojitos Ashley</title>
+    <link rel="shortcut icon" href="../img/logo.png"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../js/menu.js"></script>
+
+</head>
+
+<body>
+    <nav style="background-color: rgb(187, 253, 167);" class="navbar navbar-expand-lg navbar-dark justify-content-center">
+        <img src="../img/logo.png" width="150px" class="img-fluid" alt="Responsive image">
+      </nav>
+      <nav style="background-color:  rgba(255, 224, 51, 0.75);"
+      class="navbar navbar-expand-lg navbar-expand-sm navbar-dark sticky-top">
+      <span class="open-side" style="text-align: left;">
+        <a href="#" onclick="openSideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#111" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#111" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#111" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <a style="font-size:medium;" href="../index.html">GRINGAS * TACOS * BURRITOS</a>
+        <a style="font-size:medium;" href="./Views/Bebidas.html">BEBIDAS</a>
+      </div>
+      <div class="img-fluid" alt="Responsive image" style="margin: 0px auto">
+        <h4>Menú</h4>
+      </div>
+    </nav>
+
+    <div class="container col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top: 2%; text-align: center;">
+        <div class="row justify-content-center">
+            <h4>Bebidas Frías</h4>
+            <div class="container">
+                <div class="row justify-content-center ">
+                    <table class="table table-hover" >
+                        <thead class="table-warning">
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Precio</td>
+                            </tr>
+                        </thead>
+                        <tbody id="table1">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <h4>Bebidas Calientes</h4>
+            <div class="container">
+                <div class="row justify-content-center ">
+                    <table class="table table-hover" >
+                        <thead class="table-warning">
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Precio</td>
+                            </tr>
+                        </thead>
+                        <tbody id="table2">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/SMenu.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="../js/Bebidas.js"></script>
+       
+</body>
+</html>
