@@ -20,7 +20,7 @@ function obtener() {
         $("#table").empty();
         snapshot.forEach(function (childsnapshot) {
             var data = childsnapshot.val();
-            if(data.id == 'GTB'){
+            if(data.label == 'GTB'){
                 var tr = `<tr>
           <td>${data.name}</td>
           <td> Q.${data.price.toFixed(2)}</td>

@@ -21,13 +21,13 @@ function obtener() {
         $("#table2").empty();
         snapshot.forEach(function (childsnapshot) {
             var data = childsnapshot.val();
-            if(data.id == 'BF'){
+            if(data.label == 'BF'){
                 var tr = `<tr>
           <td>${data.name}</td>
           <td> Q.${data.price.toFixed(2)}</td>
           </tr>`;
                 $("#table1").append(tr);
-            }else if(data.id == "BC"){
+            }else if(data.label == "BC"){
                 var tr = `<tr>
                 <td>${data.name}</td>
                 <td> Q.${data.price.toFixed(2)}</td>

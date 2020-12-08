@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="id" placeholder="Codigo">
+    <input type="text" id="name" placeholder="Nombre del Producto">
+    <input type="number" id="price" placeholder="Precio">
+    <input type="text" id="label" placeholder="Etiqueta">
+
+    <button onclick="insertar()">Guardar</button>
+    <button onclick="modificar()">Modificar</button>
+    <button onclick="eliminar()">Borrar</button>
+    <button onclick="buscar()">Buscar</button>
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="../js/Insertar.js"></script>
+</body>
+</html>
